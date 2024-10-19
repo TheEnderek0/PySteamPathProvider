@@ -1,3 +1,3 @@
-import steamappdata
+import pysteampathprovider as provider
 
-print(steamappdata.GetAppInstallPath(620))
+print(provider.GetAppInstallPath(620))
