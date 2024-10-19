@@ -1,7 +1,9 @@
-from winreg import OpenKeyEx, QueryValueEx, HKEY_LOCAL_MACHINE, CloseKey
 from pathlib import Path
 from sys import platform
 from srctools import Keyvalues
+
+if platform == "win32":
+    from winreg import OpenKeyEx, QueryValueEx, HKEY_LOCAL_MACHINE, CloseKey
 
 REG_STEAM = "SOFTWARE\\WOW6432Node\\Valve\\Steam"
 
