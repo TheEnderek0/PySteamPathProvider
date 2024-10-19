@@ -1,0 +1,35 @@
+[build-system]
+requires = [
+	"setuptools >= 68.1.0",
+    "srctools >= 2.4.0"
+	]
+
+[project]
+name = "PySteamPathProvider"
+requires-python = ">=3.8"
+version = "1.1"
+urls = {source="https://github.com/TheEnderek0/PySteamPathProvider/"}
+description = "Library used for accessing the installation directories (and app names) given Steam app-ids."
+readme = "README.md"
+keywords = ["Steam", "Valve", "Source Engine"]
+authors = [
+	{name="Enderek"}
+]
+license = {text = "MIT"}
+classifiers = [
+	"Development Status :: 5 - Production/Stable",
+	"License :: OSI Approved :: MIT License",
+	"Programming Language :: Python :: 3 :: Only",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Topic :: Software Development :: Libraries",
+	"Topic :: Games/Entertainment"
+]
+dependencies=[
+	"srctools >= 2.4.0"
+]
+
+
+[tool.setuptools.packages.find]
+	where = ["src"]
+	include = ["steamappdata*"]
