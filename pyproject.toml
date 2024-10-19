@@ -7,7 +7,7 @@ requires = [
 [project]
 name = "PySteamPathProvider"
 requires-python = ">=3.8"
-version = "1.2"
+version = "1.3"
 urls = {source="https://github.com/TheEnderek0/PySteamPathProvider/"}
 description = "Library used for accessing the installation directories (and app names) given Steam app-ids."
 readme = "README.md"
@@ -32,4 +32,4 @@ dependencies=[
 
 [tool.setuptools.packages.find]
 	where = ["src"]
-	include = ["steamappdata*"]
+	include = ["pysteampathprovider*"]
