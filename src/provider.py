@@ -21,7 +21,14 @@ def GetSteamInstallPath() -> Path | None:
 
 
 def GetSteamInstallPathLinux() -> Path | None:
-    return None #TODO: Implement for linux
+    #TODO: Test if this works properly.
+    path = "~/.local/share/Steam" # Default path, there is a 99% chance a user has installed steam there.
+    path = Path(path)
+    if not path.exists():
+        return None
+    
+    path = path.resolve()
+    return path
 
 
 
